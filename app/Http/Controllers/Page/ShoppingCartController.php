@@ -157,6 +157,7 @@ class ShoppingCartController extends Controller
         if (Auth::guard('users')->check()) {
             $ip = $request->getClientIp();
             $cart = Cart::with('productCart')->where(['cr_ip_address' => $ip, 'cr_status' => 0])->first();
+//            dd(count($cart->productCart));
             return view('page.cart.index', compact('cart'));
         } else {
             return redirect()->with('error', 'Vui lòng đăng nhập để truy cập');

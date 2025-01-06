@@ -90,10 +90,14 @@
                     </div>
 
                     <div class="flex-c-m h-full p-l-18 p-r-25 bor5">
-                        <div class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11 icon-header-noti {{ Auth::guard('users')->check() ? 'js-show-cart' : '' }}"
-                             data-notify="{{ isset($qty) && Auth::guard('users')->check() ? $qty : 0 }}" url ="{{ route('quick.view.cart') }}">
+{{--                        <div class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11 icon-header-noti {{ Auth::guard('users')->check() ? 'js-show-cart' : '' }}"--}}
+{{--                             data-notify="{{ isset($qty) && Auth::guard('users')->check() ? $qty : 0 }}" url ="{{ route('quick.view.cart') }}">--}}
+{{--                            <i class="zmdi zmdi-shopping-cart"></i>--}}
+{{--                        </div>--}}
+                        <a class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11 icon-header-noti"
+                             data-notify="{{ isset($qty) && Auth::guard('users')->check() ? $qty : 0 }}" href ="{{ route('view.cart') }}">
                             <i class="zmdi zmdi-shopping-cart"></i>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </nav>

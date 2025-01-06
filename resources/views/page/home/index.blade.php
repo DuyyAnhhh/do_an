@@ -4,13 +4,13 @@
 @stop
 @section('content')
     @include('page.common.slide', compact('slides'))
-{{--    <div class="sec-banner bg0">--}}
-{{--        <div class="flex-w flex-c-m">--}}
-{{--            @foreach($events as $key => $event)--}}
-{{--                @include('page.common.itemEvent', ['event' => $event])--}}
-{{--            @endforeach--}}
-{{--        </div>--}}
-{{--    </div>--}}
+    <div class="sec-banner bg0" style="margin-top: 50px">
+        <div class="flex-w flex-c-m">
+            @foreach($events as $key => $event)
+                @include('page.common.itemEvent', ['event' => $event])
+            @endforeach
+        </div>
+    </div>
 
     <section class="sec-product bg0 p-t-50 p-b-50">
         <div class="container">
@@ -50,24 +50,24 @@
             </div>
         </div>
     </section>
-{{--    @if ($articles->count() > 0)--}}
-{{--    <section class="sec-blog bg0 p-t-50 p-b-50">--}}
-{{--        <div class="container">--}}
-{{--            <div class="p-b-66">--}}
-{{--                <h3 class="ltext-105 cl5 txt-center respon1">--}}
-{{--                    Tin Tức Nổi Bật--}}
-{{--                </h3>--}}
-{{--            </div>--}}
+    @if ($articles->count() > 0)
+    <section class="sec-blog bg0 p-t-50 p-b-50">
+        <div class="container">
+            <div class="p-b-66">
+                <h3 class="ltext-105 cl5 txt-center respon1">
+                    Tin Tức Nổi Bật
+                </h3>
+            </div>
 
-{{--            <div class="row">--}}
-{{--                @foreach($articles as $key => $article)--}}
-{{--                    @include('page.common.itemNew', compact('article'))--}}
-{{--                @endforeach--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </section>--}}
-{{--    @endif--}}
-    {{-- @if ($trademarks->count() > 0)
+            <div class="row">
+                @foreach($articles as $key => $article)
+                    @include('page.common.itemNew', compact('article'))
+                @endforeach
+            </div>
+        </div>
+    </section>
+    @endif
+     @if ($trademarks->count() > 0)
     <section class="sec-product bg0 p-t-50 p-b-50">
         <div class="container">
             <div class="p-b-32">
@@ -101,7 +101,7 @@
             </div>
         </div>
     </section>
-    @endif --}}
+    @endif
 @stop
 @section('script')
 @stop

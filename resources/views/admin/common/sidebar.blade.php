@@ -78,12 +78,12 @@
                         </li>
                     </ul>
                 </li>
-{{--                <li class="nav-item">--}}
-{{--                    <a href="{{ route('article.index') }}" class="nav-link {{ isset($article_active) ? $article_active : '' }}">--}}
-{{--                        <i class="nav-icon fas fa-file-word" aria-hidden="true"></i>--}}
-{{--                        <p>Bài viết</p>--}}
-{{--                    </a>--}}
-{{--                </li>--}}
+                <li class="nav-item">
+                    <a href="{{ route('article.index') }}" class="nav-link {{ isset($article_active) ? $article_active : '' }}">
+                        <i class="nav-icon fas fa-file-word" aria-hidden="true"></i>
+                        <p>Bài viết</p>
+                    </a>
+                </li>
                 <li class="nav-item has-treeview {{ isset($data_info_active) ? 'menu-open' : '' }}">
                     <a href="#" class="nav-link {{ isset($data_info_active) ? $data_info_active : '' }}">
                         <i class="nav-icon fa fa-th-large"></i>
@@ -96,12 +96,12 @@
                                 <p>Banner</p>
                             </a>
                         </li>
-{{--                        <li class="nav-item">--}}
-{{--                            <a href="{{ route('event.index') }}" class="nav-link {{ isset($event_active) ? $event_active : '' }}">--}}
-{{--                                <i class="nav-icon fab fa-dropbox" aria-hidden="true"></i>--}}
-{{--                                <p>Sự kiện</p>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
+                        <li class="nav-item">
+                            <a href="{{ route('event.index') }}" class="nav-link {{ isset($event_active) ? $event_active : '' }}">
+                                <i class="nav-icon fab fa-dropbox" aria-hidden="true"></i>
+                                <p>Sự kiện</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 {{--<li class="nav-item">--}}

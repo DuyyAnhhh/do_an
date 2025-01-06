@@ -67,7 +67,7 @@ class LoginController extends Controller
         if (Auth::guard('users')->attempt($data)) {
             return redirect()->route('page.home');
         }
-        return redirect()->back()->with('danger', 'Đăng nhập thất bại.');
+        return redirect()->back()->with('error', 'Tài khoản hoặc mật khẩu không đúng');
     }
 
     public function logout()

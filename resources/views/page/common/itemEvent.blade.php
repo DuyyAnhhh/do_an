@@ -1,7 +1,7 @@
 <div class="size-202 m-lr-auto respon4">
     <!-- Block1 -->
     <div class="block1 wrap-pic-w">
-        <img src="{{ !empty($event->e_banner) ? asset(pare_url_file($event->e_banner)) : asset('admin/dist/img/no-image.png') }}" alt="IMG-BANNER" style="height: 364px;">
+        <img src="{{ !empty($event->e_banner) ? asset(pare_url_file($event->e_banner)) : asset('admin/dist/img/no-image.png') }}" alt="IMG-BANNER" style="height: 320px; width: 400px">
 
         <a href="{{ $event->e_link }}"
            class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">

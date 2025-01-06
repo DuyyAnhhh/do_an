@@ -32,6 +32,7 @@ class UserController extends Controller
                 $userRole->select('*');
             }
         ])->orderBy('id', 'DESC')->paginate(10);
+//        dd($users[2]->userRole->count());
         return view('admin.user.index', compact('users'));
     }
 
